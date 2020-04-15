@@ -2,7 +2,7 @@ package com.reivart.dinosaurus;
 
 import java.util.ArrayList;
 
-public class DinoData {
+class DinoData {
     private static String[] dinoNames = {
             "Ankylosaurus",
             "Brachiosaurus",
@@ -15,7 +15,6 @@ public class DinoData {
             "Tyrannosaurus Rex",
             "Triceratops"
     };
-
     private static String[] dinoDetails = {
             "Panjang tubuh hewan purbakala ini bisa mencapai 9 meter atau 30 kaki. Tubuhnya Ankylosaurus dibalut dengan sejenis cangkang keras yang membuat tubuhnya tak mudah diserang bahkan oleh T-Rex sekalipun. Jika ia diserang oleh lawannya, maka ia akan mempertahankan dirinya dengan menyerang menggunakan ekornya yang panjang dan lurus dan ujungnya yang keras berbentuk seperti sebuah gada.",
             "Termasuk dalam genus sauropod dan ditemukan pertama kali di Grand River Canyon (sekarang adalah Sungai Colorado), Amerika Serikat. Seperti sauropoda yang lain, ia merupakan binatang berkaki empat dengan tengkorak kepala kecil, dengan leher dan ekor yang panjang, berotot, dan ramping. Diperkirakan tubuhnya bisa mencapai panjang 26 meter dengan berat badan hingga 70-80 ton.",
@@ -28,7 +27,6 @@ public class DinoData {
             "Sering disingkat menjadi T-Rex yang bermakna kadal yang kejam. Panjang tubuhnya mencapai 12 meter/40 kaki dengan berat badan 7 ton. Mangsanya ialah dinosaurus herbivora seperti triceratops dan edmontosaurus.",
             "Nama dinosaurus ini berasal dari bahasa Yunani yang bermakna tiga tanduk, sering disingkat menjadi Tritop. Dinosaurus ini jarang melarikan diri dari T-Rex karena ia bisa melindungi dirinya dengan tandukan yang tajam dengan kombinasi tandung layaknya pedang dan kepala yang seperti tameng."
     };
-
     private static int[] dinoImages = {
             R.drawable.ankylosaurus,
             R.drawable.brachiosaurus,
@@ -41,7 +39,6 @@ public class DinoData {
             R.drawable.trex,
             R.drawable.triceratops
     };
-
     static ArrayList<Dino> getListData() {
         ArrayList<Dino> list = new ArrayList<>();
         for (int position = 0; position < dinoNames.length; position++) {
@@ -54,4 +51,3 @@ public class DinoData {
         return list;
     }
 }
-

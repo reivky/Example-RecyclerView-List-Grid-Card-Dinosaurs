@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-
     <ImageView
         android:id="@+id/img_item_photo"
         android:layout_width="match_parent"
-        android:layout_height="190dp"
-        android:layout_margin="1dp"
+        android:layout_height="@dimen/layout_height_190"
+        android:layout_margin="@dimen/layout_margin_1"
         android:scaleType="fitXY"
-        tools:src="@color/colorAccent" />
+        tools:src="@color/colorAccent"
+        android:contentDescription="@string/todo" />
 </LinearLayout>

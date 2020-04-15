@@ -1,4 +1,4 @@
-package com.reivart.dinosaurus;
+package AdapterPackage;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,17 +7,15 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-
+import com.reivart.dinosaurus.Dino;
+import com.reivart.dinosaurus.R;
 import java.util.ArrayList;
 
 public class CardViewDinoAdapter extends RecyclerView.Adapter<CardViewDinoAdapter.CardViewViewHolder>{
-
     private ArrayList<Dino> listDino;
     public CardViewDinoAdapter(ArrayList<Dino> list) {
         this.listDino = list;
@@ -28,7 +26,6 @@ public class CardViewDinoAdapter extends RecyclerView.Adapter<CardViewDinoAdapte
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_cardview_dino, viewGroup, false);
         return new CardViewViewHolder(view);
     }
-
     @Override
     public void onBindViewHolder(@NonNull final CardViewViewHolder holder, int position) {
 
@@ -60,13 +57,12 @@ public class CardViewDinoAdapter extends RecyclerView.Adapter<CardViewDinoAdapte
             }
         });
     }
-
     @Override
     public int getItemCount() {
         return listDino.size();
     }
 
-    class CardViewViewHolder extends RecyclerView.ViewHolder {
+    static class CardViewViewHolder extends RecyclerView.ViewHolder {
         ImageView imgPhoto;
         TextView tvName, tvDetail;
         Button btnFavorite, btnShare;

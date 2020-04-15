@@ -7,4 +7,5 @@
     <string name="cardview">CardView</string>
     <string name="favorite">Favorite</string>
     <string name="share">Share</string>
+    <string name="todo">TODO</string>
 </resources>
